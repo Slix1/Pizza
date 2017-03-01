@@ -5,15 +5,14 @@
 	
 }
 
-
-
+/** header *//
 
 #bloc_entete {
 	background-image: url('../img/image_fond_menu.jpg');
 	height:500px;
 	background-position-x:center;
 	background-repeat:no-repeat;
-	
+
 }
 
 .intro-header {
@@ -57,9 +56,50 @@
 
 .icon_social {
 	margin:15px;
+}
+
+#bloc_transition {
 
 }
 
+/*Qui sommes nous ?*/
+h2{
+	text-align: center;
+}
+.valeur {
+	text-align: justify;
 
+}
+.img_qui_sommes_nous {
+	border: 5px solid black;
+}
+
+/*Ou est le camion*/
+
+.img_ou_est_le_camion{
+	border: 5px solid black;
+}
+.lieu p {
+	display: inline-block;
+}
+.lieu .btnlieu {
+	width: 10%
+}
+.ou_est_le_camion h3{
+	display: inline-block;
+}
+
+@media only screen and (max-width: 768px) {
+	.btncarte {
+		display: none;
+		
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.btncartemobile {
+		display: none;
+	}
+}
 
 
