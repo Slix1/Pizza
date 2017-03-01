@@ -5,10 +5,11 @@
 	
 }
 
-/** header *//
+/** header **/
 
 #bloc_entete {
 	background-image: url('../img/image_fond_menu.jpg');
+	background-size:cover;
 	height:500px;
 	background-position-x:center;
 	background-repeat:no-repeat;
@@ -59,6 +60,10 @@
 }
 
 #bloc_transition {
+background-image: url('../img/image_transverse_4.jpg');
+background-repeat: no-repeat;
+background-size:cover;
+
 
 }
 
