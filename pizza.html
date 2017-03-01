@@ -9,6 +9,7 @@
 	</head>
 
 
+
 <body>
 	
 	<div id="bloc_entete">
@@ -83,23 +84,9 @@
     
 	</div>
 
-	
-	<div id="Qui sommes nous?">
-		
-		<div id="Title">
-			
-		<h1>Qui sommes nous?</h1>
 
-		</div>
-
-
-	<div id="Photo camion"><img src="" /></div>
 	
-	<article>Bla Bla Bla</article>
 	
-	<div id="Popup"></div>
-	
-	</div>
 
 	<div id="bloc_transition">
 		<div class=row>
@@ -110,7 +97,13 @@
 	</div>		
 
 
-	<div class="container">
+	
+	
+	
+
+
+
+<div class="container-fluid">
 		
 		<div class="row">
 			
@@ -121,19 +114,45 @@
 
 		<div class="row">
 			
-			<div class="col-xs-12">
+
+
+			<div class="col-xs-12 btncarte">
 					
-					<button type="button" class="btn btn-primary active btn-lg" data-toggle="collapse" data-target="#pizzatomate" aria-expanded="true" aria-controls="pizzatomate">Base Tomate</button>
+
+					<button id="btntomate" type="button" class="btn btn-primary btn-lg " data-toggle="collapse" data-target="#pizzatomate" aria-expanded="true" aria-controls="pizzatomate" class="collapse in">Base Tomate</button>
+
 					
-					<button type="button" class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#pizzacreme" aria-expanded="true" aria-controls="pizzacreme">Base Creme</button>
+					<button id="btncreme" type="button" class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#pizzacreme" aria-expanded="true" aria-controls="pizzacreme">Base Creme</button>
 					
-					<button type="button" class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#dessert" aria-expanded="true" aria-controls="dessert">Dessert</button>
+					<button id="btndessert" type="button" class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#pizzadessert" aria-expanded="true" aria-controls="pizzadessert">Dessert</button>
+			
 			</div>
+
+
+			
+			<div class="col-xs-12 btncartemobile">
+					  
+					  <button type="button" class="btn btn-primary btn-lg dropdown-toggle" id="btn-mobile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">La Carte</button>
+					  
+						  <div class="dropdown-menu" aria-labelledby="btn-mobile">
+
+						    <button id="btntomate-mobile" type="button" class="btn dropdown-item btn-default btn-lg " data-toggle="collapse" data-target="#pizzatomate" aria-expanded="true" aria-controls="pizzatomate" class="collapse in">Base Tomate</button>
+
+	    					<button id="btncreme-mobile" type="button" class="btn dropdown-item btn-default btn-lg" data-toggle="collapse" data-target="#pizzacreme" aria-expanded="true" aria-controls="pizzacreme">Base Creme</button>
+
+	    					<button id="btndessert-mobile" type="button" class="btn dropdown-item btn-default btn-lg" data-toggle="collapse" data-target="#pizzadessert" aria-expanded="true" aria-controls="pizzadessert">Dessert</button>
+						  </div>
+			
+			</div>
+
+			
+
 		</div>
+
 
 		<div class="row">
 
-        	<div class="collapse" id="pizzatomate">
+        	<div class="collapse in" id="pizzatomate">
 		  
 		  	
 			
@@ -221,7 +240,6 @@
 						
 						<div class="caption">
 							<h3>La Cabra</h3>
-							<p>(accompagnement au choix : miel, persillade ou piment d'Espelette)</p>
 							<p>Ingredients: Chèvre, fromage</p>
 							<p>29 cm: 7,8€ 33cm: 10,5€</p>
 						</div>
@@ -459,7 +477,7 @@
 		
 		</div>  
 
-		<div class="collapse" id="dessert">
+		<div class="collapse" id="pizzadessert">
 
 
 		  	
@@ -531,12 +549,55 @@
 			</div>
 		</div>
 
+		<div class="row">
+			
+			<div class="col-xs-6">
 
-		<div id="Download"></div>
-		
-		<div id="Carte fidelité"></div>
+				<div id="Download">
+					
+				<a href="#" class="btn btn-primary btn-lg" role="button">Téléchargez notre Carte</a>
+
+				</div>
+
+			</div>
+			>>>>>>> master
+
+			<div class="col-xs-6">
+
+				<div id="Carte fidelité">
+				
+					<!-- Button modal -->
+					<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#carteFidelite">
+	  				Carte Fidélité</button>
+
+	  				<!-- Modal -->
+					<div class="modal fade" id="carteFidelite" tabindex="-1" role="dialog" aria-labelledby="carteFidelite">
+	  					
+	  					<div class="modal-dialog" role="document">
+	    					
+	    					<div class="modal-content">
+	      
+	    						<div class="modal-header">
+	        						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        						<h4 class="modal-title" id="titrecarteFidelite">La carte de fidélité</h4>
+	      						</div>
+
+	      						<div class="modal-body">
+	        						<p>Pensez a demandez votre carte de fidélité!</p>
+	      						</div>
+	      
+	    					</div>
+	  					
+	  					</div>
+					
+					</div>				
+				</div>
+			</div>
+		</div>
+
 	
 	</div>
+
 
 	<div id="bloc_transition">
 		<div class=row>
@@ -546,18 +607,152 @@
 		</div>
 	</div>		
 
-	<div id="Ou nous trouver?">
-		
-		<div id="Title">
-			
-		<h1>Ou nous trouver?</h1>
 
+	<div class="ou_est_le_camion">
+		<h2>OU EST LE CAMION ?</h2>
+			<img class="img_ou_est_le_camion" src="img.png" alt="img" />
+			<h3>Retrouvez votre camion à Pizza</h3>
+		<div class="lieu">
+			<div class="Lundi">
+				<button type="button" class="btn btn-primary btnlieu" data-toggle="modal" data-target=".modal-lundi">Lundi</button>
+
+
+
+				<div class="modal fade modal-lundi" tabindex="-1" role="dialog" aria-labelledby="myLundiModalLabel">
+			  		<div class="modal-dialog modal-lg" role="document">
+			    		<div class="modal-content">
+			    			<div class="modal-header">
+			       	 			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        				<h4 class="modal-title" id="myLundiModalLabel">Lundi</h4>
+					      	</div>
+					      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2675.5346639427858!2d1.8921853160010569!3d47.887335979204266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e4e521c7825c73%3A0xd04eb0a3b37ab0a9!2sMarket+Orl%C3%A9ans+Saint-Mesmin!5e0!3m2!1sfr!2sfr!4v1488366233001" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				    	</div>
+				  	</div>
+				</div>
+			    <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+			</div>
+
+
+			<div class="Mardi">
+				<button type="button" class="btn btn-primary btnlieu" data-toggle="modal" data-target=".modal-mardi">Mardi</button>
+
+
+
+
+				<div class="modal fade modal-mardi" tabindex="-1" role="dialog" aria-labelledby="myMardiModalLabel">
+			  		<div class="modal-dialog modal-lg" role="document">
+			    		<div class="modal-content">
+			   				<div class="modal-header">
+			        			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        				<h4 class="modal-title" id="myMardiModalLabel">Mardi</h4>
+			      			</div>
+					      ...
+					    </div>
+			  		</div>
+				</div>
+			    <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+			</div>
+
+
+			<div class="Mercredi">
+				<button type="button" class="btn btn-primary btnlieu" data-toggle="modal" data-target=".modal-mercredi">Mercredi</button>
+
+
+
+				<div class="modal fade modal-mercredi" tabindex="-1" role="dialog" aria-labelledby="myMercrediModalLabel">
+			  		<div class="modal-dialog modal-lg" role="document">
+			    		<div class="modal-content">
+			    			<div class="modal-header">
+			        			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        				<h4 class="modal-title" id="myMercrediModalLabel">Mercredi</h4>
+			      			</div>
+			     			 ...
+			    		</div>
+			  		</div>
+				</div>
+			    <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+			</div>
+
+
+			<div class="Jeudi">
+				<button type="button" class="btn btn-primary btnlieu" data-toggle="modal" data-target=".modal-jeudi">Jeudi</button>
+
+
+
+				<div class="modal fade modal-jeudi" tabindex="-1" role="dialog" aria-labelledby="myJeudiModalLabel">
+			  		<div class="modal-dialog modal-lg" role="document">
+			   			<div class="modal-content">
+			    			<div class="modal-header">
+			        			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        				<h4 class="modal-title" id="myJeudiModalLabel">Jeudi</h4>
+			      			</div>
+			      			...
+			    		</div>
+			  		</div>
+				</div>
+			    <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+			</div>
+
+
+			<div class="Vendredi">
+				<button type="button" class="btn btn-primary btnlieu" data-toggle="modal" data-target=".modal-vendredi">Vendredi</button>
+
+
+
+				<div class="modal fade modal-vendredi" tabindex="-1" role="dialog" aria-labelledby="myVendrediModalLabel">
+			  		<div class="modal-dialog modal-lg" role="document">
+			    		<div class="modal-content">
+			    			<div class="modal-header">
+			        			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        				<h4 class="modal-title" id="myVendrediModalLabel">Vendredi</h4>
+			      			</div>
+			      			...
+			    		</div>
+			  		</div>
+				</div>
+			    <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+			</div>
+
+
+			<div class="Samedi">
+				<button type="button" class="btn btn-primary btnlieu" data-toggle="modal" data-target=".modal-samedi">Samedi</button>
+
+
+
+				<div class="modal fade modal-samedi" tabindex="-1" role="dialog" aria-labelledby="mySamediModalLabel">
+			  		<div class="modal-dialog modal-lg" role="document">
+			    		<div class="modal-content">
+			    			<div class="modal-header">
+			        			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        				<h4 class="modal-title" id="mySamediModalLabel">Samedi</h4>
+			      			</div>
+			      			...
+			    		</div>
+			  		</div>
+				</div>
+			    <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+			</div>
+
+
+			<div class="Dimanche">
+				<button type="button" class="btn btn-primary btnlieu" data-toggle="modal" data-target=".modal-dimanche">Dimanche</button>
+
+
+
+				<div class="modal fade modal-dimanche" tabindex="-1" role="dialog" aria-labelledby="myDimancheModalLabel">
+			  		<div class="modal-dialog modal-lg" role="document">
+			    		<div class="modal-content">
+			    			<div class="modal-header">
+			        			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        				<h4 class="modal-title" id="myDimancheModalLabel">Dimanche</h4>
+			      			</div>
+			      			...
+			    		</div>
+			  		</div>
+				</div>
+			    <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+			</div>
 		</div>
-		
-		<div id="Photo"><img src="" /></div>
-		
-		<article>Bla Bla Bla</article>
-		
 	</div>
 
 	<div id="bloc_transition">
@@ -605,5 +800,55 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script>
+
+	$(document).ready(function() {
+
+
+    $('#btntomate').click(function() {
+
+        $('#pizzacreme').hide();
+        $('#pizzadessert').hide();
+        $('#pizzatomate').show();
+    });
+
+    $('#btncreme').click(function() {
+
+        $('#pizzatomate').hide();
+        $('#pizzadessert').hide();
+        $('#pizzacreme').show();
+    });
+
+    $('#btndessert').click(function() {
+
+        $('#pizzatomate').hide();
+        $('#pizzacreme').hide();
+        $('#pizzadessert').show();
+    });
+
+    $('#btntomate-mobile').click(function() {
+
+        $('#pizzacreme').hide();
+        $('#pizzadessert').hide();
+        $('#pizzatomate').show();
+    });
+
+    $('#btncreme-mobile').click(function() {
+
+        $('#pizzatomate').hide();
+        $('#pizzadessert').hide();
+        $('#pizzacreme').show();
+    });
+
+    $('#btndessert-mobile').click(function() {
+
+        $('#pizzatomate').hide();
+        $('#pizzacreme').hide();
+        $('#pizzadessert').show();
+    });
+
+});
+</script> 
 
 </html>
