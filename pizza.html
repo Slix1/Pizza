@@ -52,7 +52,7 @@
 		</div>
 	</div>
 
-	<div class="container">
+<div class="container-fluid">
 		
 		<div class="row">
 			
@@ -64,19 +64,20 @@
 		<div class="row">
 			
 			<div class="col-xs-12">
+				
+					<button id="btntomate" type="button" class="btn btn-primary btn-lg " data-toggle="collapse" data-target="#pizzatomate" aria-expanded="true" aria-controls="pizzatomate" class="collapse in">Base Tomate</button>
+
 					
+					<button id="btncreme" type="button" class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#pizzacreme" aria-expanded="true" aria-controls="pizzacreme">Base Creme</button>
 					
-					<button type="button" class="btn btn-primary active btn-lg" data-toggle="collapse" data-target="#pizzatomate" aria-expanded="true" aria-controls="pizzatomate">Base Tomate</button>
-					
-					<button type="button" class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#pizzacreme" aria-expanded="true" aria-controls="pizzacreme">Base Creme</button>
-					
-					<button type="button" class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#dessert" aria-expanded="true" aria-controls="dessert">Dessert</button>
+					<button id="btndessert" type="button" class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#pizzadessert" aria-expanded="true" aria-controls="pizzadessert">Dessert</button>
 			</div>
 		</div>
 
+
 		<div class="row">
 
-        	<div class="collapse" id="pizzatomate">
+        	<div class="collapse in" id="pizzatomate">
 		  
 		  	
 			
@@ -164,7 +165,6 @@
 						
 						<div class="caption">
 							<h3>La Cabra</h3>
-							<p>(accompagnement au choix : miel, persillade ou piment d'Espelette)</p>
 							<p>Ingredients: Chèvre, fromage</p>
 							<p>29 cm: 7,8€ 33cm: 10,5€</p>
 						</div>
@@ -402,7 +402,7 @@
 		
 		</div>  
 
-		<div class="collapse" id="dessert">
+		<div class="collapse" id="pizzadessert">
 
 
 		  	
@@ -475,9 +475,51 @@
 		</div>
 
 
-		<div id="Download"></div>
-		
-		<div id="Carte fidelité"></div>
+		<div class="row">
+			
+			<div class="col-xs-6">
+
+				<div id="Download">
+					
+				<a href="#" class="btn btn-primary btn-lg" role="button">Téléchargez notre Carte</a>
+
+				</div>
+
+			</div>
+			
+
+			<div class="col-xs-6">
+
+				<div id="Carte fidelité">
+				
+					<!-- Button modal -->
+					<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#carteFidelite">
+	  				Carte Fidélité</button>
+
+	  				<!-- Modal -->
+					<div class="modal fade" id="carteFidelite" tabindex="-1" role="dialog" aria-labelledby="carteFidelite">
+	  					
+	  					<div class="modal-dialog" role="document">
+	    					
+	    					<div class="modal-content">
+	      
+	    						<div class="modal-header">
+	        						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        						<h4 class="modal-title" id="titrecarteFidelite">La carte de fidélité</h4>
+	      						</div>
+
+	      						<div class="modal-body">
+	        						<p>Pensez a demandez votre carte de fidélité!</p>
+	      						</div>
+	      
+	    					</div>
+	  					
+	  					</div>
+					
+					</div>				
+				</div>
+			</div>
+		</div>
 	
 	</div>
 
@@ -663,5 +705,34 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script>
+
+	$(document).ready(function() {
+
+
+    $('#btntomate').click(function() {
+
+        $('#pizzacreme').hide();
+        $('#pizzadessert').hide();
+        $('#pizzatomate').show();
+    });
+
+    $('#btncreme').click(function() {
+
+        $('#pizzatomate').hide();
+        $('#pizzadessert').hide();
+        $('#pizzacreme').show();
+    });
+
+    $('#btndessert').click(function() {
+
+        $('#pizzatomate').hide();
+        $('#pizzacreme').hide();
+        $('#pizzadessert').show();
+    });
+
+});
+</script> 
 
 </html>
