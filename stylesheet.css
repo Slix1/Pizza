@@ -1,0 +1,11 @@
+/*Qui sommes nous ?*/
+h2{
+	text-align: center;
+}
+.valeur {
+	text-align: justify;
+
+}
+.img {
+	border: 5px solid black;
+}
