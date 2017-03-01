@@ -1,0 +1,65 @@
+
+@font-face{
+    font-family: 'Cedarville Cursive', cursive;
+    src: url('Cedarville-Cursive.ttf');
+	
+}
+
+
+
+
+#bloc_entete {
+	background-image: url('../img/image_fond_menu.jpg');
+	height:500px;
+	background-position-x:center;
+	background-repeat:no-repeat;
+	
+}
+
+.intro-header {
+	/*background-image: url('../img/image_fond_menu.jpg');
+	position:absolute;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position-x: center;
+	width:100%;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	height:800px;*/
+	
+}
+
+.btn-primary {
+	background-color: black;
+	margin:10px 15px;
+	}
+
+.btn-primary a {
+	color: yellow;
+	font-family: Cedarville-Cursive,sans-serif;
+	font-size:24px;
+	font-weight:bold;
+	}
+
+
+.navbar-custom {
+	background-color: transparent;
+}
+
+#mainNav {
+	background-color: transparent;
+	border:none;
+}
+
+#bs-example-navbar-collapse-1 {
+	margin-top:300px;
+}
+
+.icon_social {
+	margin:15px;
+
+}
+
+
+
+
