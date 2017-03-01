@@ -1,26 +1,24 @@
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-		<link rel="stylesheet" href="css/stylesheet.css" 
-					href="https://fonts.googleapis.com/css?family=Cedarville-Cursive">
-		<title>Pizzas Cataluna</title>
+<head>
+<meta charset="UTF-8">
 
-	</head>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/stylesheet.css" 
+					href="https://fonts.googleapis.com/css?family=Cedarville-Cursive">
+
+<title>pizza cataluna</title>
+</head>
 
 
 
 <body>
 	
-	<div id="bloc_entete">
+	<div id="bloc_entete" class="container-fluid">
 
 		<header class="intro-header">
 	        <div class="container-fluid">
-	       		<div class="row">
-	             <!--   <div class="col-xs-offset-4 col-xs-8">
-	                        <h1>Des produits de qualité pour des pizzas à tomber</h1> 
-	                </div> -->
-	            </div>
 	        </div>
 	    </header>  
 
@@ -85,8 +83,33 @@
 	</div>
 
 
+
+	
+
+<!-- section carte des pizzas -->
+
+
 	
 	
+	
+<!--Qui sommes nous ?-->
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="qui_sommes_nous">
+					<h2>ENVIE D'UNE CATALUNA PIZZA ?</h2>
+			</div><br>
+			<div class="col-xs-12 col-lg-6 ">
+					<p class="valeur">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pellentesque felis nisi, eu ultricies lectus varius quis. Proin pulvinar neque a dapibus tristique. Ut non porta nunc. In quis fermentum nisi, consectetur vehicula tellus. Suspendisse ut felis ut massa interdum luctus non eu dui. Fusce non mollis erat. In in viverra ligula. Praesent nec felis fringilla, ornare nunc id, gravida diam. Maecenas consectetur metus sed dapibus gravida. Duis at mollis mi. Suspendisse dapibus neque eget mauris tincidunt, sed fermentum nunc eleifend. Duis maximus quam et est varius egestas ac sit amet magna. Phasellus dolor lacus, ultrices eu mauris in, blandit pellentesque sem. Cras pellentesque, ante in mattis luctus, magna ex viverra erat, ac lacinia felis tellus sit amet leo.
+
+					</p>
+			</div>
+			<div class="col-xs-offset-2 col-lg-1">
+					<img class="img_qui_sommes_nous" src="img.png" alt="image"/>
+			</div>
+
+		</div>
+	</div>
 
 	<div id="bloc_transition">
 		<div class=row>
@@ -94,16 +117,13 @@
 			<img src="img/image_transverse_4.jpg">
 			</div>
 		</div>
-	</div>		
-
-
-	
-	
-	
+	</div>	
 
 
 
-<div class="container-fluid">
+
+	<div class="container-fluid">
+
 		
 		<div class="row">
 			
@@ -598,7 +618,7 @@
 	
 	</div>
 
-
+<!-- bloc transition -->
 	<div id="bloc_transition">
 		<div class=row>
 			<div class="col-xs-offset-2 col-xs-8">
@@ -608,33 +628,16 @@
 	</div>		
 
 
+
+<!-- où est le camion -->
+
 	<div class="ou_est_le_camion">
 		<h2>OU EST LE CAMION ?</h2>
 			<img class="img_ou_est_le_camion" src="img.png" alt="img" />
 			<h3>Retrouvez votre camion à Pizza</h3>
 		<div class="lieu">
-			<div class="Lundi">
-				<button type="button" class="btn btn-primary btnlieu" data-toggle="modal" data-target=".modal-lundi">Lundi</button>
-
-
-
-				<div class="modal fade modal-lundi" tabindex="-1" role="dialog" aria-labelledby="myLundiModalLabel">
-			  		<div class="modal-dialog modal-lg" role="document">
-			    		<div class="modal-content">
-			    			<div class="modal-header">
-			       	 			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-			        				<h4 class="modal-title" id="myLundiModalLabel">Lundi</h4>
-					      	</div>
-					      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2675.5346639427858!2d1.8921853160010569!3d47.887335979204266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e4e521c7825c73%3A0xd04eb0a3b37ab0a9!2sMarket+Orl%C3%A9ans+Saint-Mesmin!5e0!3m2!1sfr!2sfr!4v1488366233001" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-				    	</div>
-				  	</div>
-				</div>
-			    <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
-			</div>
-
-
 			<div class="Mardi">
-				<button type="button" class="btn btn-primary btnlieu" data-toggle="modal" data-target=".modal-mardi">Mardi</button>
+				<button type="button" class="btn btn-primary btnlieu" data-toggle="modal" data-target=".modal-mardi">Mardi Soir</button>
 
 
 
@@ -646,7 +649,10 @@
 			        			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 			        				<h4 class="modal-title" id="myMardiModalLabel">Mardi</h4>
 			      			</div>
-					      ...
+					      <div class="mardi-content">
+					      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2675.51785454473!2d1.8923562160010736!3d47.88766137920434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e4e521c7825c73%3A0x61c6381ea6da3a94!2s43+Avenue+de+Saint-Mesmin%2C+45100+Orl%C3%A9ans!5e0!3m2!1sfr!2sfr!4v1488375754560" width="898" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+					      			    <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+					      	</div>
 					    </div>
 			  		</div>
 				</div>
@@ -655,7 +661,7 @@
 
 
 			<div class="Mercredi">
-				<button type="button" class="btn btn-primary btnlieu" data-toggle="modal" data-target=".modal-mercredi">Mercredi</button>
+				<button type="button" class="btn btn-primary btnlieu" data-toggle="modal" data-target=".modal-mercredi">Mercredi Soir</button>
 
 
 
@@ -666,7 +672,10 @@
 			        			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 			        				<h4 class="modal-title" id="myMercrediModalLabel">Mercredi</h4>
 			      			</div>
-			     			 ...
+			     			 <div class="mercredi-content">
+					      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2684.293229685017!2d1.610371215996321!3d47.717557679192204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e4be5e9b3fe431%3A0x16e68e942528391f!2s3+Route+d&#39;Orl%C3%A9ans%2C+41220+Saint-Laurent-Nouan!5e0!3m2!1sfr!2sfr!4v1488375867872" width="898" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+					      			    <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+					      	</div>
 			    		</div>
 			  		</div>
 				</div>
@@ -675,7 +684,7 @@
 
 
 			<div class="Jeudi">
-				<button type="button" class="btn btn-primary btnlieu" data-toggle="modal" data-target=".modal-jeudi">Jeudi</button>
+				<button type="button" class="btn btn-primary btnlieu" data-toggle="modal" data-target=".modal-jeudi">Jeudi Midi & Soir</button>
 
 
 
@@ -686,7 +695,10 @@
 			        			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 			        				<h4 class="modal-title" id="myJeudiModalLabel">Jeudi</h4>
 			      			</div>
-			      			...
+			      			<div class="jeudi-content">
+					      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2674.7538812079656!2d1.8530695160014716!3d47.90244877920534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e4efff459c7769%3A0x40396cad63ddc457!2s15+Rue+Pierre+et+Marie+Curie%2C+45140+Ingr%C3%A9!5e0!3m2!1sfr!2sfr!4v1488375937310" width="898" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+					      			    <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+					      	</div>
 			    		</div>
 			  		</div>
 				</div>
@@ -695,7 +707,7 @@
 
 
 			<div class="Vendredi">
-				<button type="button" class="btn btn-primary btnlieu" data-toggle="modal" data-target=".modal-vendredi">Vendredi</button>
+				<button type="button" class="btn btn-primary btnlieu" data-toggle="modal" data-target=".modal-vendredi">Vendredi Soir</button>
 
 
 
@@ -706,7 +718,10 @@
 			        			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 			        				<h4 class="modal-title" id="myVendrediModalLabel">Vendredi</h4>
 			      			</div>
-			      			...
+			      			<div class="vendredi-content">
+					      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2675.51785454473!2d1.8923562160010736!3d47.88766137920434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e4e521c7825c73%3A0x61c6381ea6da3a94!2s43+Avenue+de+Saint-Mesmin%2C+45100+Orl%C3%A9ans!5e0!3m2!1sfr!2sfr!4v1488375754560" width="898" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+					      			    <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+					      	</div>
 			    		</div>
 			  		</div>
 				</div>
@@ -715,7 +730,7 @@
 
 
 			<div class="Samedi">
-				<button type="button" class="btn btn-primary btnlieu" data-toggle="modal" data-target=".modal-samedi">Samedi</button>
+				<button type="button" class="btn btn-primary btnlieu" data-toggle="modal" data-target=".modal-samedi">Samedi Soir</button>
 
 
 
@@ -726,7 +741,10 @@
 			        			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 			        				<h4 class="modal-title" id="mySamediModalLabel">Samedi</h4>
 			      			</div>
-			      			...
+			      			<div class="samedi-content">
+					      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2674.9721169630234!2d1.886937916001336!3d47.898224979205025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e4e52fc639a1d7%3A0x19b65708697dd660!2s42+Quai+Saint-Laurent%2C+45000+Orl%C3%A9ans!5e0!3m2!1sfr!2sfr!4v1488376122298" width="898" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+					      			    <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+					      	</div>
 			    		</div>
 			  		</div>
 				</div>
@@ -735,7 +753,7 @@
 
 
 			<div class="Dimanche">
-				<button type="button" class="btn btn-primary btnlieu" data-toggle="modal" data-target=".modal-dimanche">Dimanche</button>
+				<button type="button" class="btn btn-primary btnlieu" data-toggle="modal" data-target=".modal-dimanche">Dimanche Soir</button>
 
 
 
@@ -746,7 +764,10 @@
 			        			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 			        				<h4 class="modal-title" id="myDimancheModalLabel">Dimanche</h4>
 			      			</div>
-			      			...
+			      			<div class="dimanche-content">
+					      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2675.51785454473!2d1.8923562160010736!3d47.88766137920434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e4e521c7825c73%3A0x61c6381ea6da3a94!2s43+Avenue+de+Saint-Mesmin%2C+45100+Orl%C3%A9ans!5e0!3m2!1sfr!2sfr!4v1488375754560" width="898" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+					      			    <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+					      	</div>
 			    		</div>
 			  		</div>
 				</div>
@@ -755,15 +776,15 @@
 		</div>
 	</div>
 
-	<div id="bloc_transition">
-		<div class=row>
-			<div class="col-xs-offset-2 col-xs-8">
-			<img src="img/image_transverse_4.jpg">
-			</div>
+
+<!-- bloc transition -->
+	<div id="bloc_transition" class="container-fluid">
+	
+	</div>
 		</div>
 	</div>		
 	
-
+<!-- bloc Evènements -->
 	<div class="container-fluid">
 		
 		<div class="row">
@@ -773,13 +794,41 @@
 		</div>
 		
 		<p>Nous sommes disponible pour vos évènementiels: enterrement de vie de garçon, enterrement de jeune fille, lendemain de mariage, anniversaire, départ à la retraite, repas d'entreprise...</p>
-		<p>N'hésitez pas à nous contacter !</p>
 		
-		<p>appelez nous pour vos évènements + popup formulaire de contact envoyez nous un message</p>
+		
+		
+
+		<div class="contact">
+				<button type="button" class="btn btn-primary btnlieu" data-toggle="modal" data-target=".modal-contact">Contactez nous</button>
+
+				<div class="modal fade modal-contact" tabindex="-1" role="dialog" aria-labelledby="contactLabel">
+			  		<div class="modal-dialog modal-lg" role="document">
+			    		<div class="modal-content">
+			   				<div class="modal-header">
+			        			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        				<h4 class="modal-title" id="contactLabel">Contactez nous</h4>
+			        				<p>
+			        				Vous pouvez nous contacter: 
+			        				<ul>
+			        				<li> par téléphone au 06 51 11 11 22 </li>
+			        				<li>nous envoyer un email à l'adresse suivante contact@catalunapizza.fr	</li>
+			        				</ul>        		
+			        				</p>
+			        					
+			      			</div>
+  					    </div>
+			  		</div>
+				</div>
+			</div>
 	
 	</div>
 
+
+<!-- footer -->
+	<footer>
+
 	<div class="container-fluid footer">
+
 		
 		<div class="row">
 			

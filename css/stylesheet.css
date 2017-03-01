@@ -9,10 +9,10 @@
 
 #bloc_entete {
 	background-image: url('../img/image_fond_menu.jpg');
+	background-size:cover;
 	height:500px;
 	background-position-x:center;
 	background-repeat:no-repeat;
-
 }
 
 .intro-header {
@@ -59,6 +59,10 @@
 }
 
 #bloc_transition {
+background-image: url('../img/image_transverse_4.jpg');
+background-repeat: no-repeat;
+background-size:cover;
+
 
 }
 
@@ -70,11 +74,17 @@ h2{
 	text-align: justify;
 
 }
+
+.modal-content{
+	text-align: center;
+}
+
 .img_qui_sommes_nous {
 	border: 5px solid black;
 }
 
 /*Ou est le camion*/
+
 
 .img_ou_est_le_camion{
 	border: 5px solid black;
@@ -102,4 +112,6 @@ h2{
 	}
 }
 
-
+#bloc_transition {
+	background-image: url(../img/image_transverse_4.jpg);
+}
