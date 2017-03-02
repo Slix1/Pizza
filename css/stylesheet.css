@@ -1,6 +1,6 @@
 
 @font-face{
-    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Cedarville-Cursive',cursive;
     src: url('Cedarville-Cursive.ttf');
 	
 }
@@ -58,6 +58,7 @@
 	margin:15px;
 }
 
+
 .reseau {
 	display: inline-flex;
 }
@@ -68,33 +69,83 @@
 	}
 }
 
-#bloc_transition {
+/*#bloc_transition {
 background-image: url('../img/image_transverse_4.jpg');
 background-repeat: no-repeat;
-background-size:cover;
-
-
-}
+background-size:cover;*/
 
 /*Qui sommes nous ?*/
+
+
+
+.qui_sommes_nous {
+	margin-top:30px;
+	margin-bottom:50px;
+}
+
 h2{
 	text-align: center;
+	font-family: Cedarville-Cursive;
+	margin-top: 30px;
+	margin-bottom:30px;
 }
+
+.titre2 {
+	border:5px solid black;
+	padding: 20px;
+}
+
 .valeur {
 	text-align: justify;
-
+	font-size:20px;
 }
 
 .modal-content{
 	text-align: center;
+	font-size:20px;
 }
 
 .img_qui_sommes_nous {
-	border: 5px solid black;
+	border: 2px solid black;
 }
+
+
+/*bloc_transition*/
+.bloc_transition {
+	margin-bottom:50px;
+}
+
+
+/*carte des pizzas*/
+
+
+#pizzas {
+	margin-bottom:30px;
+}
+
+h2{
+	text-align: center;
+	font-family: Cedarville-Cursive;
+	margin-top: 30px;
+	margin-bottom:30px;
+}
+
+.titre2 {
+	border:5px solid black;
+	padding: 20px;
+
+
+
+
+
+
 
 /*Ou est le camion*/
 
+.ou_est_le_camion{
+	margin-top:30px;
+	margin-bottom:50px;
+}
 
 .img_ou_est_le_camion{
 	border: 5px solid black;
@@ -118,6 +169,21 @@ h2{
 
 @media only screen and (min-width: 768px) {
 	.btncartemobile {
+		display: none;
+	}
+}
+
+
+
+@media only screen and (max-width: 992px) {
+	.camion {
+		display: none;
+		
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	.camion-mobile {
 		display: none;
 	}
 }
