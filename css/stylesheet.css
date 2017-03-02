@@ -13,7 +13,7 @@
 #bloc_entete {
 	background-image: url('../img/image_fond_menu.jpg');
 	background-size:cover;
-	height:500px;
+	height:935px;
 	background-position-x:center;
 	background-repeat:no-repeat;
 }
@@ -111,6 +111,17 @@ h2{
 
 
 
+/*bloc_transition*/
+
+#transition {
+	margin-bottom:50px;
+	background: url('../img/image_transverse_4.jpg');
+	height: 300px;
+	width: auto;
+
+}
+
+
 /*carte des pizzas*/
 
 .col-xs-12 {
@@ -126,11 +137,18 @@ h2{
 		height:200px;
 }
 
+
+
+
+
+
+
 .thumbnail .fichepizza h3{
 		font-family:Cedarville-Cursive;
 		font-size:30px;
 		color:#DC0000;
 }
+
 
 .thumbnail .fichepizza p{
 		font-family:arial;
@@ -196,6 +214,19 @@ h2{
 
 @media only screen and (min-width: 992px) {
 	.camion-mobile {
+		display: none;
+	}
+}
+
+.btnreturn {
+	position: fixed;
+	opacity: 0.4;
+	z-index: 1;
+	margin-left: 92%; 
+}
+
+@media only screen and (max-width: 992px) {
+	.btnreturn {
 		display: none;
 	}
 }
