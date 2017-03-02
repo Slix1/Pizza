@@ -1,8 +1,11 @@
 
 @font-face{
     font-family: 'Cedarville-Cursive',cursive;
-    src: url('Cedarville-Cursive.ttf');
-	
+    font-family: 'Cookie-Regular',cursive;
+    font-family: 'MrDeHaviland-Regular',cursive;
+    src: url('Cedarville-Cursive.ttf'),cursive;
+    src: url('Cookie-Regular.ttf'),cursive;;
+    src: url('MrDeHaviland-Regular.ttf'),cursive;;
 }
 
 /** header **/
@@ -15,27 +18,23 @@
 	background-repeat:no-repeat;
 }
 
-.intro-header {
-	/*background-image: url('../img/image_fond_menu.jpg');
-	position:absolute;
-	background-repeat: no-repeat;
-	background-attachment: scroll;
-	background-position-x: center;
-	width:100%;
-	background-repeat: no-repeat;
-	background-attachment: scroll;
-	height:800px;*/
+.navbar-default .navbar-nav li {
+	background-color: #DC0000;
+	padding:20px 30px;
+	border-radius:8px;
+	margin:0 40px 0 40px;
 	
 }
 
-.btn-primary {
-	background-color: black;
-	margin:10px 15px;
-	}
+.navbar-default .navbar-nav .page-scroll {
+	font-family: 'Cookie-Regular','MrDeHaviland-Regular',sans-serif;
+	font-size:28px;
+	color:#EEFF01;
+}
 
 .btn-primary a {
 	color: yellow;
-	font-family: 'Cedarville'-Cursive,sans-serif;
+	font-family: 'Cedarville-Cursive',sans-serif;
 	font-size:24px;
 	font-weight:bold;
 	}
@@ -58,6 +57,15 @@
 	margin:15px;
 }
 
+.icon_social a {
+	font-size:xx-large;
+	font-weight: bold;
+	color:#EEFF01;
+}
+
+.icon_social img {
+	padding-bottom: 10px;
+}
 
 .reseau {
 	display: inline-flex;
@@ -69,25 +77,17 @@
 	}
 }
 
-/*#bloc_transition {
-background-image: url('../img/image_transverse_4.jpg');
-background-repeat: no-repeat;
-background-size:cover;*/
-
-/*Qui sommes nous ?*/
-
-
 
 .qui_sommes_nous {
 	margin-top:30px;
-	margin-bottom:50px;
+	margin-bottom:30px;
 }
 
 h2{
 	text-align: center;
 	font-family: Cedarville-Cursive;
 	margin-top: 30px;
-	margin-bottom:30px;
+	margin-bottom:70px;
 }
 
 .titre2 {
@@ -112,24 +112,48 @@ h2{
 
 /*bloc_transition*/
 .bloc_transition {
-	margin-bottom:50px;
+	margin-top:50px;
+	margin-bottom:30px;
 }
 
 /*carte des pizzas*/
+
+.col-xs-12 {
+	margin-bottom: 35px;
+}
 
 
 #pizzas {
 	margin-bottom:30px;
 }
 
-h2{
-	text-align: center;
-	font-family: Cedarville-Cursive;
-	margin-top: 30px;
-	margin-bottom:30px;
+.thumbnail .fichepizza{
+		height:200px;
 }
 
+.thumbnail .fichepizza h3{
+		font-family:Cedarville-Cursive;
+		font-size:30px;
+		color:#DC0000;
+}
 
+.thumbnail .fichepizza p{
+		font-family:arial;
+		font-size:18px;
+		color:black;
+}
+
+.thumbnail .fichepizza .prix{
+		font-family:arial;
+		font-size:24px;
+		color:#DC0000;
+}
+
+.col-xs-12 p {
+	font-size: 18px;
+	font-family: arial;
+	color:black;
+}
 
 /*Ou est le camion*/
 
@@ -139,7 +163,7 @@ h2{
 }
 
 .img_ou_est_le_camion{
-	border: 5px solid black;
+	border: 2px solid black;
 }
 .lieu p {
 	display: inline-block;
@@ -149,12 +173,16 @@ h2{
 }
 .ou_est_le_camion h3{
 	display: inline-block;
+	width:405px;
+	margin-left: 70px;
+	text-align:justify;
 }
+
+
 
 @media only screen and (max-width: 768px) {
 	.btncarte {
 		display: none;
-		
 	}
 }
 
@@ -165,11 +193,9 @@ h2{
 }
 
 
-
 @media only screen and (max-width: 992px) {
 	.camion {
 		display: none;
-		
 	}
 }
 
