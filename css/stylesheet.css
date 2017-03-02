@@ -35,7 +35,7 @@
 
 .btn-primary a {
 	color: yellow;
-	font-family: Cedarville-Cursive,sans-serif;
+	font-family: 'Cedarville'-Cursive,sans-serif;
 	font-size:24px;
 	font-weight:bold;
 	}
@@ -58,7 +58,24 @@
 	margin:15px;
 }
 
+
+.reseau {
+	display: inline-flex;
+}
+
+@media only screen and (max-width: 768px) {
+	.reseau{
+		display: inline-table;
+	}
+}
+
+/*#bloc_transition {
+background-image: url('../img/image_transverse_4.jpg');
+background-repeat: no-repeat;
+background-size:cover;*/
+
 /*Qui sommes nous ?*/
+
 
 
 .qui_sommes_nous {
@@ -157,6 +174,7 @@ h2{
 }
 
 
+
 @media only screen and (max-width: 992px) {
 	.camion {
 		display: none;
@@ -169,3 +187,4 @@ h2{
 		display: none;
 	}
 }
+
