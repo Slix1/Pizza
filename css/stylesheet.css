@@ -35,7 +35,7 @@
 
 .btn-primary a {
 	color: yellow;
-	font-family: Cedarville-Cursive,sans-serif;
+	font-family: 'Cedarville'-Cursive,sans-serif;
 	font-size:24px;
 	font-weight:bold;
 	}
@@ -56,6 +56,16 @@
 
 .icon_social {
 	margin:15px;
+}
+
+.reseau {
+	display: inline-flex;
+}
+
+@media only screen and (max-width: 768px) {
+	.reseau{
+		display: inline-table;
+	}
 }
 
 #bloc_transition {
@@ -112,6 +122,3 @@ h2{
 	}
 }
 
-#bloc_transition {
-	background-image: url(../img/image_transverse_4.jpg);
-}

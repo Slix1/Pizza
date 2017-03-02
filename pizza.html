@@ -25,14 +25,35 @@
 		<!-- Navigation -->
 	    <nav id="mainNav" class="navbar navbar-default navbar-custom">
 	        <div class="container">
+	        <div class="row">
 	            <!-- Brand and toggle get grouped for better mobile display -->
-	            <div class="navbar-header page-scroll">
-	                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-				        <span class="sr-only">Toggle navigation</span>
-				        <span class="icon-bar"></span>
-				        <span class="icon-bar"></span>
-				        <span class="icon-bar"></span>
-			      	</button>
+	                <div class="navbar-header page-scroll">
+	                
+	                <div class="btn-group">
+					  		<div class="col-xs-offset-7">					  		
+					  		<button class="btn btn-default btn-sm navbar-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    		<span class="caret"></span>
+					  			<span class="sr-only">Toggle navigation</span>
+				        		<span class="icon-bar"></span>
+				        		<span class="icon-bar"></span>
+				        		<span class="icon-bar"></span>
+			      			</button>
+
+
+					  <ul class="dropdown-menu">
+					    <li>
+	                        <a class="page-scroll" href="#pizzas">Nos Pizzas</a>
+	                    </li>
+	                    <li>
+	                        <a class="page-scroll" href="#emplacements">Où sommes nous ?</a>
+	                    </li>
+	                    <li>
+	                        <a class="page-scroll" href="#evenements">Evènements</a>
+	                    </li>
+					  </ul>
+					</div></div>
+
+				        
 			      	<img class="pull-left" src ="img/logo.jpg" width=200px;>
 	            </div>
 
@@ -43,31 +64,17 @@
 	                        <a href="#page-top"></a>
 	                    </li>
 	                    <li>
-	                    	<button type="button" class="btn btn-primary btn-lg">
-	                        <a class="page-scroll" href="#pizzas">Nos Pizzas</a></button>
+	                    	<a class="page-scroll" href="#pizzas">Nos pizzas</a>
 	                    </li>
 	                    <li>
-	                    	<button type="button" class="btn btn-primary btn-lg">
-	                        <a class="page-scroll" href="#emplacements">Où sommes nous ?</a></button>
+	                    	<a class="page-scroll" href="#emplacements"> Ou est le camion ?</a>
 	                    </li>
 	                    <li>
-	                    	<button type="button" class="btn btn-primary btn-lg">
-	                        <a class="page-scroll" href="#evenements">Evènements</a></button>
+	                    	<a class="page-scroll" href="#evenements">Evénements</a>
 	                    </li>
 	                </ul>
 
-	                <ul class="nav navbar-nav navbar-right">
-		        		<li><div class="icon_social">
-		        			<img src="img/twitter.png" width="50px;">
-		        			<a href="tel:+33651757920">06 51 75 79 20</a>
-		        			</div></li>
-		        		<li><div class="icon_social">
-		        			<a href="https://www.facebook.com/catalunapizz/?fref=ts" target="_blank"><img src="img/twitter.png" width="50px;"></a>
-		        			</div></li>
-		        		<li><div class="icon_social">
-		        			<a href="https://twitter.com/CatalunaPizz" target="blank"><img src="img/twitter.png" width="50px;"></a>
-		        			</div></li>
-	        		</ul>
+	                
 
 	            </div>
 
@@ -77,8 +84,20 @@
 	        </div>
 	        <!-- /.container-fluid -->
 	    </nav>
+	    		<div class="col-sm-offset-5 col-xs-offset-1">
+					<div class="reseau">
 
-
+		        		<div class="icon_social">
+		        			<img src="img/twitter.png" width="50px;">
+		        			<a href="tel:+33651757920">06 51 75 79 20</a>
+		        			</div>
+		        		<div class="icon_social">
+		        			<a href="https://www.facebook.com/catalunapizz/?fref=ts" target="_blank"><img src="img/twitter.png" width="50px;"></a>
+		        			</div>
+		        		<div class="icon_social">
+		        			<a href="https://twitter.com/CatalunaPizz" target="blank"><img src="img/twitter.png" width="50px;"></a>
+		        			</div>
+	        		</div></div>
     
 	</div>
 
@@ -630,7 +649,7 @@
 
 <!-- où est le camion -->
 
-	<div class="ou_est_le_camion">
+	<div class="ou_est_le_camion" id="emplacements">
 		<h2>OU EST LE CAMION ?</h2>
 			<img class="img_ou_est_le_camion" src="img.png" alt="img" />
 			<h3>Retrouvez votre camion à Pizza</h3>
