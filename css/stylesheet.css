@@ -13,7 +13,7 @@
 #bloc_entete {
 	background-image: url('../img/image_fond_menu.jpg');
 	background-size:cover;
-	height:500px;
+	height:935px;
 	background-position-x:center;
 	background-repeat:no-repeat;
 }
@@ -111,9 +111,13 @@ h2{
 
 
 /*bloc_transition*/
-.bloc_transition {
-	margin-top:50px;
-	margin-bottom:30px;
+
+#transition {
+	margin-bottom:50px;
+	background: url('../img/image_transverse_4.jpg');
+	height: 300px;
+	width: auto;
+
 }
 
 /*carte des pizzas*/
@@ -131,11 +135,18 @@ h2{
 		height:200px;
 }
 
+
+
+
+
+
+
 .thumbnail .fichepizza h3{
 		font-family:Cedarville-Cursive;
 		font-size:30px;
 		color:#DC0000;
 }
+
 
 .thumbnail .fichepizza p{
 		font-family:arial;
