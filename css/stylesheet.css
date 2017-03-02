@@ -10,7 +10,7 @@
 #bloc_entete {
 	background-image: url('../img/image_fond_menu.jpg');
 	background-size:cover;
-	height:500px;
+	height:935px;
 	background-position-x:center;
 	background-repeat:no-repeat;
 }
@@ -111,8 +111,11 @@ h2{
 
 
 /*bloc_transition*/
-.bloc_transition {
+#transition {
 	margin-bottom:50px;
+	background: url('../img/image_transverse_4.jpg');
+	height: 300px;
+	width: auto;
 }
 
 /*carte des pizzas*/
@@ -129,7 +132,7 @@ h2{
 	margin-bottom:30px;
 }
 
-.titre2 {
+/*.titre2 {
 	border:5px solid black;
 	padding: 20px;
 
