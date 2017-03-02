@@ -115,3 +115,16 @@ h2{
 #bloc_transition {
 	background-image: url(../img/image_transverse_4.jpg);
 }
+
+@media only screen and (max-width: 992px) {
+	.camion {
+		display: none;
+		
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	.camion-mobile {
+		display: none;
+	}
+}
