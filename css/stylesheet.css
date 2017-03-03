@@ -24,9 +24,9 @@ body {
 
 .navbar-default .navbar-nav li {
 	background-color: #000000;
-	padding:10px 30px;
-	border-radius:5px;
-	margin:0 30px 0 30px;
+	padding:10px 10px;
+	border-radius:1px;
+	margin:0 10px 0 10px;
 	margin-top:80px;
 	
 }
@@ -81,7 +81,13 @@ body {
 
 @media only screen and (max-width: 768px) {
 	.reseau{
-		display: inline-table;
+		display: none;
+		}
+}
+
+@media only screen and (min-width: 768px) {
+	.reseau_responsive {
+		display: none;
 	}
 }
 
@@ -107,6 +113,7 @@ h2{
 .valeur {
 	text-align: justify;
 	font-size:20px;
+	line-height: 1.6;
 }
 
 .modal-content{
@@ -132,6 +139,11 @@ h2{
 
 
 /*carte des pizzas*/
+
+.btn-rouge {
+	background-color: #DC0000;
+	color:black;
+}
 
 .col-xs-12 {
 	margin-bottom: 35px;
