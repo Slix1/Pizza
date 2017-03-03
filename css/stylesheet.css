@@ -1,13 +1,16 @@
 
 @font-face{
     font-family: 'Cedarville-Cursive',cursive;
-    font-family: 'Cookie-Regular',cursive;
-    font-family: 'MrDeHaviland-Regular',cursive;
-    src: url('Cedarville-Cursive.ttf'),cursive;
-    src: url('Cookie-Regular.ttf'),cursive;
-    src: url('MrDeHaviland-Regular.ttf'),cursive;
+    font-family: 'Cookie', cursive;
+    font-family: 'Over the Rainbow', cursive;  
+    
 }
 
+body {
+
+    font-family: Helvetica,Arial,sans-serif;
+
+}
 /** header **/
 
 #bloc_entete {
@@ -18,23 +21,25 @@
 	background-repeat:no-repeat;
 }
 
+
 .navbar-default .navbar-nav li {
-	background-color: #DC0000;
-	padding:20px 30px;
-	border-radius:8px;
-	margin:0 40px 0 40px;
+	background-color: #000000;
+	padding:10px 30px;
+	border-radius:5px;
+	margin:0 30px 0 30px;
+	margin-top:80px;
 	
 }
 
 .navbar-default .navbar-nav .page-scroll {
-	font-family: 'Cookie-Regular','MrDeHaviland-Regular',sans-serif;
+	font-family:Arial;
 	font-size:28px;
-	color:#EEFF01;
+	color:white;
 }
 
 .btn-primary a {
 	color: yellow;
-	font-family: 'Cedarville-Cursive',sans-serif;
+	/*font-family: 'Cedarville-Cursive',sans-serif;*/
 	font-size:24px;
 	font-weight:bold;
 	}
@@ -53,6 +58,8 @@
 	margin-top:300px;
 }
 
+/* bloc reseau social */
+
 .icon_social {
 	margin:15px;
 }
@@ -60,7 +67,7 @@
 .icon_social a {
 	font-size:xx-large;
 	font-weight: bold;
-	color:#EEFF01;
+	color:#000000;
 }
 
 .icon_social img {
@@ -69,6 +76,7 @@
 
 .reseau {
 	display: inline-flex;
+	margin-top:50px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -85,7 +93,8 @@
 
 h2{
 	text-align: center;
-	font-family: Cedarville-Cursive;
+	font-family: Cookie;
+	font-size:40px;
 	margin-top: 30px;
 	margin-bottom:70px;
 }
@@ -138,33 +147,28 @@ h2{
 }
 
 
-
-
-
-
-
 .thumbnail .fichepizza h3{
-		font-family:Cedarville-Cursive;
-		font-size:30px;
+		font-family:Cookie;
+		font-size:36px;
 		color:#DC0000;
 }
 
 
 .thumbnail .fichepizza p{
-		font-family:arial;
+		/*font-family:arial;*/
 		font-size:18px;
 		color:black;
 }
 
 .thumbnail .fichepizza .prix{
-		font-family:arial;
+		/*font-family:arial;*/
 		font-size:24px;
 		color:#DC0000;
 }
 
 .col-xs-12 p {
 	font-size: 18px;
-	font-family: arial;
+	/*font-family: arial;*/
 	color:black;
 }
 
@@ -185,6 +189,7 @@ h2{
 	width: 10%
 }
 .ou_est_le_camion h3{
+	font-size:18px;
 	display: inline-block;
 	width:405px;
 	margin-left: 70px;
