@@ -141,8 +141,9 @@ h2{
 /*carte des pizzas*/
 
 .btn-rouge {
-	background-color: #DC0000;
+	background-color: rgba(220,0,0,0.8);
 	color:black;
+	font-weight:bold;
 }
 
 .col-xs-12 {
