@@ -184,6 +184,12 @@ h2{
 	color:black;
 }
 
+#Download {
+	margin-bottom: 20px;
+}
+
+
+
 /*Ou est le camion*/
 
 .ou_est_le_camion{
@@ -261,3 +267,12 @@ h2{
 	margin-top: 5px;
 }
 
+.btnlieu {
+	width: 15%;
+}
+
+@media only screen and (max-width: 992px) {
+	.img_qui_sommes_nous {
+		width: 300px;
+	}
+}
