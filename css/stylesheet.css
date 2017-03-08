@@ -13,29 +13,60 @@ body {
 }
 /** header **/
 
-#bloc_entete {
+header {
 	background-image: url('../img/image_fond_menu.jpg');
 	background-size:cover;
-	height:945px;
+	height:1000px;
 	background-position-x:center;
 	background-repeat:no-repeat;
 }
 
-
-.navbar-default .navbar-nav li {
-	background-color: #000000;
-	padding:10px 10px;
-	border-radius:1px;
-	margin:0 10px 0 10px;
-	margin-top:80px;
-	
+.logo {
+	padding-top: 70px;
+	text-align: center;
 }
 
-.navbar-default .navbar-nav .page-scroll {
-	font-family:Arial;
-	font-size:28px;
-	color:white;
+.accroche {
+	font-size: 50px;
+	text-align: center;
+	padding-top: 200px;
+	color: yellow;
+	font-family: Over the Rainbow;
 }
+/** nav **/
+.navbar-header {
+	padding-left: 10px;
+	font-family: Cookie;
+	font-size: 30px;
+
+
+}
+
+
+
+.navbar-default .navbar-nav li a {
+	color: white;
+	font-family: Cookie;
+	font-size: 30px;
+
+}
+
+.navbar-default .navbar-text {
+	color: white;
+}
+
+.navbar-default .navbar-link {
+	color: white;
+}
+
+.navbar-default {
+	background-color: rgba(0 ,0 ,0 , 0.5);
+	border: none;
+	color: #fff;
+
+
+}
+
 
 .btn-primary a {
 	color: yellow;
@@ -45,51 +76,9 @@ body {
 	}
 
 
-.navbar-custom {
-	background-color: transparent;
-}
 
-#mainNav {
-	background-color: transparent;
-	border:none;
-}
 
-#bs-example-navbar-collapse-1 {
-	margin-top:300px;
-}
 
-/* bloc reseau social */
-
-.icon_social {
-	margin:15px;
-}
-
-.icon_social a {
-	font-size:xx-large;
-	font-weight: bold;
-	color:#000000;
-}
-
-.icon_social img {
-	padding-bottom: 10px;
-}
-
-.reseau {
-	display: inline-flex;
-	margin-top:50px;
-}
-
-@media only screen and (max-width: 768px) {
-	.reseau{
-		display: none;
-		}
-}
-
-@media only screen and (min-width: 768px) {
-	.reseau_responsive {
-		display: none;
-	}
-}
 
 
 .qui_sommes_nous {
@@ -210,8 +199,8 @@ h2{
 .ou_est_le_camion h3{
 	font-size:18px;
 	display: inline-block;
-	width:405px;
-	margin-left: 70px;
+	
+	
 	text-align:justify;
 }
 
@@ -266,6 +255,7 @@ h2{
 
 .Paiments {
 	margin-top: 5px;
+	width: auto;
 }
 
 .btnlieu {
