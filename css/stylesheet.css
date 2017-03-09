@@ -129,6 +129,12 @@ h2{
 
 /*carte des pizzas*/
 
+.btn-rouge {
+	background-color: rgba(220,0,0,0.8);
+	color:black;
+	font-weight:bold;
+}
+
 .center-pills {
 	display: flex;
 	justify-content: center;
