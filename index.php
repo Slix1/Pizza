@@ -426,6 +426,9 @@
                                     <li> par téléphone au 06 51 11 11 22 </li>
                                     <li>nous envoyer un email à l'adresse suivante contact@catalunapizza.fr	</li>
                                 </ul>
+                                <?php
+							        include ('src/newsletter.php');
+							   	 ?>
                                 </p>
 
                             </div>
