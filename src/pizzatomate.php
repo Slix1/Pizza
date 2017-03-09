@@ -14,7 +14,7 @@ $tomate = mysqli_query($bdd, "SELECT * FROM pizza WHERE type LIKE '%tomate'");
                                  <div class="caption fichepizza">
                                       <h3>' . $pizzatomate['nom'] . '</h3>
                                       <p>' . $pizzatomate['ingredients'] . '</p>
-                                      <p><span class="prix">29cm: ' . $pizzatomate['pv_taille1'] . '  33cm: ' . $pizzatomate['pv_taille2'] . '</span></p>
+                                      <p><span class="prix">29cm: ' . $pizzatomate['pv_taille1'] . ' € 33cm: ' . $pizzatomate['pv_taille2'] . ' €</span></p>
                                  </div>
                             </div>
                         </div>';

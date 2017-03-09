@@ -9,7 +9,7 @@
             $reqBtnSubmit="INSERT INTO newsletter (nom,prenom,email) VALUES ('".$newData['nom']."', '".$newData['prenom']."','".$newData['email']."')";
             if (mysqli_query($bdd,$reqBtnSubmit)){
                 
-                header('Location:newsletter.php');
+                header('Location:../index.php');
             }
 
         }
@@ -23,7 +23,7 @@
 
 <link href="style.css" rel="stylesheet">
 
-<form name="newsletter" method="POST" action="newsletter.php" ">
+<form name="newsletter" method="POST" action="src/newsletter.php" ">
 
     <p><label for="nom"> Nom </label>
 

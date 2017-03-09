@@ -1,5 +1,8 @@
 <?php
 
+include 'headerAdmin.php';
+
+
 include 'connect.php';
 $bdd = mysqli_connect (SERVER,USER,PASS,DB);
 mysqli_set_charset($bdd,'UTF8');
@@ -14,10 +17,9 @@ if(isset($_POST['add'])){
 if(mysqli_query($bdd,$req_add)){
     header('Location:admin.php');
 }
-};
+}
 
 
-include 'headerAdmin.php;'
 
 ?>
 
