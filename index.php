@@ -1,158 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-
-    <link rel="stylesheet" href="css/stylesheet.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/stylesheet.css"> 
     <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Over+the+Rainbow" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Over+the+Rainbow" rel="stylesheet"> 
 
 
 
-    <title>pizza cataluna</title>
+<title>pizza cataluna</title>
 </head>
 
 
 
 <body>
-
-<div id="bloc_entete" class="container-fluid">
-
-    <header class="intro-header">
-        <div class="container-fluid">
-        </div>
-    </header>
-
-    <div class="row">
-        <div class="col-xs-offset-1 col-md-offset-7 col-md-push-10">
-
-            <div class="reseau">
-
-                <div class="icon_social">
-                    <img src="img/tel.png" width="50px;">
-                    <a href="tel:+33651757920">06 51 75 79 20</a>
-                </div>
-                <div class="icon_social">
-                    <a href="https://twitter.com/CatalunaPizz" target="blank"><img src="img/twitter.png" width="50px;"></a>
-                </div>
-                <div class="icon_social">
-                    <a href="https://www.facebook.com/catalunapizz/?fref=ts" target="_blank"><img src="img/facebook.png" width="50px;"></a>
-                </div>
-            </div>
-
-        </div>
+    <header class="intro-header" id="header">
+            
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <p class="navbar-text navbar-left">Passez commande au <a href="+33651757920" class="navbar-link">06 51 75 79 20</a></p>
     </div>
 
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav" style="padding-top: 10px">
+        <li><a href="#page2">Nos Pizzas </a></li>
+        <li><a href="#page3">Où sommes nous ?</a></li>
+        <li><a href="#page4">Evènements</a></li>
+        <li><a href="#page1">Qui est Cataluna Pizz ?</a></li>
+      </ul> 
+      
+      <a class="navbar-text navbar-right facebook" href="https://www.facebook.com/catalunapizz/?fref=ts"> <img alt="Facebook" src="img/fb.png" style="width: 30px"></a>
+      <a class="navbar-text navbar-right twitter" href="https://twitter.com/CatalunaPizz"> <img alt="Twitter" src="img/twitter1.png" style="width: 30px"></a>
+    </div><!-- /.navbar-collapse -->
 
-    <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-custom">
-        <div class="container">
-            <div class="row">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header page-scroll">
-
-
-                    <div class="col-xs-offset-9 btn-group">
-                        <button class="btn btn-default btn-sm navbar-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="caret"></span>
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
+  </div><!-- /.container-fluid -->
+</nav>
 
 
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a class="page-scroll" href="#page2">Nos Pizzas</a>
-                            </li>
-                            <li>
-                                <a class="page-scroll" href="#page3">Où sommes nous ?</a>
-                            </li>
-                            <li>
-                                <a class="page-scroll" href="#page4">Evènements</a>
-                            </li>
-                            <li>
-                                <a class="page-scroll" href="#page1">Qui est Cataluna Pizz ?</a>
-                            </li>
-                        </ul>
-                    </div>
+    
 
 
 
-                    <div class="col-xs-12 col-md-offset-7">
-                        <a href="index.php"><img class="img-responsive" src="img/logo.jpg" width=280px;></a>
-                    </div>
-                </div>
+<div class="logo"><img src="img/logo1.png"  height="300px" /></div>
+<div class="accroche">ENVIE D'UNE CATALUNA PIZZA ?</div>
+        
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="hidden">
-                            <a href="#page-top"></a>
-                        </li>
+        
+</header>  
+    
 
-
-                        <li>
-                            <a class="page-scroll" href="#page2">Nos pizzas</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#page3">Où est le camion ?</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#page4">Evènements</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#page1">Qui est Cataluna Pizz ?</a>
-                        </li>
-                    </ul>
-
-
-
-                </div>
-
-                <div class="col-xs-offset-1 col-md-offset-7 col-md-push-10">
-
-                    <div class="reseau_responsive">
-
-                        <div class="icon_social">
-                            <img src="img/tel.png" width="50px;">
-                            <a href="tel:+33651757920">06 51 75 79 20</a>
-                        </div>
-                        <div class="icon_social">
-                            <a href="https://twitter.com/CatalunaPizz" target="blank"><img src="img/twitter.png" width="50px;"></a>
-                        </div>
-                        <div class="icon_social">
-                            <a href="https://www.facebook.com/catalunapizz/?fref=ts" target="_blank"><img src="img/facebook.png" width="50px;"></a>
-                        </div>
-                    </div>
-
-                </div>
-
-
-
-                <!-- /.navbar-collapse -->
-            </div>
-            <!-- /.container-fluid -->
-    </nav>
-
-    <!-- bouton retour -->
-    <div class="btnreturn">
-
-        <a class="page-scroll btn btn-default" role="button" href="#bloc_entete">Retour</a>
-
-
-    </div>
-
-</div>
-
-
-
-
-
+                    
+                    
 <!-- section carte des pizzas -->
 
 
