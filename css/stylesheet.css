@@ -129,7 +129,18 @@ h2{
 
 /*carte des pizzas*/
 
-.btn-rouge {
+.center-pills {
+	display: flex;
+	justify-content: center;
+}
+
+.nav-pills a{
+	background-color: rgba(220,0,0,0.8);
+	color:black;
+	font-weight:bold;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
 	background-color: rgba(220,0,0,0.8);
 	color:black;
 	font-weight:bold;
