@@ -294,3 +294,14 @@ h2{
 		width: 300px;
 	}
 }
+
+/*partie admin*/
+
+.table-admin td{
+	width:200px;
+}
+
+.libelle_tableau{
+	background-color: #b92c28;
+	color:white;
+}
