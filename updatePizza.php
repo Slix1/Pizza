@@ -1,10 +1,10 @@
 <?php
 
-include 'header.php';
+include 'headerAdmin.php';
 include 'connect.php';
 
 $bdd = mysqli_connect (SERVER,USER,PASS,DB);
-
+mysqli_set_charset($bdd,'UTF8');
 
 if(!empty($_POST)){
     foreach ($_POST as $key=>$val){

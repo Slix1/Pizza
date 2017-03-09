@@ -2,6 +2,8 @@
 
 include 'connect.php';
 $bdd = mysqli_connect (SERVER,USER,PASS,DB);
+mysqli_set_charset($bdd,'UTF8');
+
 
 if(isset($_POST['add'])){
     foreach ($_POST as $key=>$val){
@@ -15,27 +17,9 @@ if(mysqli_query($bdd,$req_add)){
 };
 
 
+include 'headerAdmin.php;'
+
 ?>
-
-
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-
-    <link rel="stylesheet" href="css/stylesheet.css">
-    <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Over+the+Rainbow" rel="stylesheet">
-
-
-
-    <title>admin pizza cataluna</title>
-</head>
-
-
 
 
 <body>
@@ -52,7 +36,7 @@ if(mysqli_query($bdd,$req_add)){
             <label for="type">type de pizza</label>
             <select name="type" id="type">
                 <option value="tomate">base tomate</option>
-                <option value="creme">base crème</option>
+                <option value="creme">base creme</option>
                 <option value="dessert">dessert</option>
             </select>
         </div>
@@ -86,8 +70,7 @@ if(mysqli_query($bdd,$req_add)){
 
 <h2>Liste des pizzas</h2>
 
-<div class="row">
-    <div class="col-xs-offset-2 col-xs-8 liste_pizzas">
+
 
 <?php
 
@@ -95,19 +78,28 @@ $req = "SELECT id,type,nom,ingredients,pv_taille1,pv_taille2 FROM pizza";
 $res =mysqli_query($bdd,$req);
 
 while ($data=mysqli_fetch_assoc($res)) {
-    echo '<div class="panel panel-primary">
-    <div class="panel-heading">'
-        .$data['nom'].'<br/>'.$data['type'].'<br/>
-        <a class="btn btn-danger pull-right" href="deletePizza.php?id='.$data['id'].'">Delete</a>
-        <a class="btn btn-warning pull-right" href="updatePizza.php?id='.$data['id'].'">Update</a>
-    </div>
-    <div class="panel-body">
-    <p>'.$data['ingredients'].'<br/>'.$data['pv_taille1'].'<br/>'.$data['pv_taille2'].'</p>
-    </div>';
+    echo '
+        <div class="row">
+            <div class="col-xs-offset-3 col-xs-6 liste_pizzas">
+ 
+            <table class="table table-bordered table-admin">
+            <caption class="libelle_tableau">'.$data['nom'].'</caption>
+            <tr><td><a class="btn btn-warning" href="updatePizza.php?id='.$data['id'].'">Update</a></td>
+            <td class="col1"><a class="btn btn-danger" href="deletePizza.php?id='.$data['id'].'">Delete</a></td></tr>
+            <tr class="success"><td class="col1">type de pizza</td><td>'.$data['type'].'</td></tr>
+            <tr><td class="col1">description</td><td>'.$data['ingredients'].'</td></tr>
+            <tr class="success"><td class="col1">PV taille1<td>'.$data['pv_taille1'].'</td></tr>
+            <tr><td class="col1">PV taille2</td><td>'.$data['pv_taille2'].'</td></tr>          
+            </table>
+            
+            </div>
+        </div>'
+
+    
+    ;
 }
 
 
 ?>
 
-    </div>
-</div>
+

@@ -12,5 +12,5 @@
 
 
 
-    <title>admin pizza cataluna</title>
+    <title>Admin Cataluna</title>
 </head>
