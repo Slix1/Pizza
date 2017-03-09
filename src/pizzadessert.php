@@ -14,7 +14,7 @@ while($pizzadessert = mysqli_fetch_assoc($dessert)) {
                                  <div class="caption fichepizza">
                                       <h3>' . $pizzadessert['nom'] . '</h3>
                                       <p>' . $pizzadessert['ingredients'] . '</p>
-                                      <p><span class="prix">' . $pizzadessert['pv_taille1'] . '' . $pizzadessert['pv_taille2'] . '</span></p>
+                                      <p><span class="prix">29cm: ' . $pizzadessert['pv_taille1'] . '  33cm: ' . $pizzadessert['pv_taille2'] . '</span></p>
                                  </div>
                             </div>
                         </div>';
