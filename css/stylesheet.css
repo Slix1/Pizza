@@ -264,6 +264,16 @@ h2{
 	margin-top: 10px;
 }
 
+.mentionslegales {
+	font-size:18px;
+	display: inline-block;
+	text-align:center;
+}
+
+.ML {
+	margin-bottom: 30px;
+}
+
 .Paiments {
 	margin-top: 5px;
 	width: auto;
