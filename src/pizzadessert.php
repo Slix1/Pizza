@@ -1,7 +1,7 @@
 <?php
 include ('src/connect.php');
 $bdd = mysqli_connect(SERVER, USER, PASS, DB);
-$dessert = mysqli_query($bdd, "SELECT * FROM pizza WHERE type LIKE '%dessert'");
+$dessert = mysqli_query($bdd, "SELECT * FROM pizza WHERE type LIKE '%essert'");
 
 
 while($pizzadessert = mysqli_fetch_assoc($dessert)) {
